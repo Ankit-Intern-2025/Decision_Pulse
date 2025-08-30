@@ -1,0 +1,40 @@
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity:0
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+    opacity:0
+}
+
+
+
+
+
+  input.custom-radio {
+    appearance: none;
+    width: 13px; /* Fixed width */
+    height: 11.5px; /* Fixed height */
+    min-width: 12px; /* Prevent shrinking */
+    min-height: 11.5px; /* Prevent shrinking */
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  input.custom-radio:checked::before {
+    content: '';
+    width:9px;
+    height: 9px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background-color: skyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  
