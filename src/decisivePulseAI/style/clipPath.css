@@ -1,0 +1,64 @@
+* {
+ box-sizing: border-box;
+}
+
+html, body {
+ background: radial-gradient(circle at 50% 190px, rebeccapurple, #111);
+ font-family: 'Arial', sans-serif;
+ font-size: 14px;
+ overflow-x: hidden;
+ min-height: 100vh;
+}
+
+button, input, label {
+ cursor: pointer;
+}
+
+button, label {
+ font-size: 1rem;
+}
+
+button {
+ border: 0;
+ border-radius: 6px;
+ color: white;
+ cursor: pointer;
+ min-width: 120px;
+ padding: 12px 12px;
+}
+
+button[disabled], button[disabled]:hover {
+ background: grey;
+ cursor: not-allowed;
+ opacity: 0.25;
+}
+
+#app {
+ padding: 40px 0;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+
+.clip-path-generator {
+ height: 300px;
+ width: 300px;
+}
+
+.clip-path-generator__container {
+ border: 4px solid #fff;
+ height: 308px;
+ position: relative;
+ width: 308px;
+}
+
+.clip-path-generator__clipped {
+ background: url(https://placebear.com/300/300) #2eec71;
+ background-size: cover;
+ height: 100%;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ clip-path: circle(50%);
+}
